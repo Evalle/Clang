@@ -19,7 +19,10 @@ int main()
         val = atoi(card_name);
     }
     printf("The cost of card is: %i\n", val);
-
+    if((val >= 3) && (val <= 6))
+        puts("Counter increased\n");
+    else if((val == 'Q') || (val == 'K') || (val == 'A') || (val == 10))
+        puts("Counter decreased\n");
     return 0;
 }
 
